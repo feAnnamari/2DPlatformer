@@ -17,7 +17,7 @@ public Transform[] backgrounds; // Array (list) of all the back- and foregrounds
  // Use this for initialization
  void Start () {
  // The previous frame had the current frame's camera position
- previousCamPos = cam.position;
+ previousCamPos = cam.position; 
  // asigning coresponding parallaxScales
  parallaxScales = new float[backgrounds.Length];
  for (int i = 0; i < backgrounds.Length; i++) {
@@ -25,7 +25,7 @@ public Transform[] backgrounds; // Array (list) of all the back- and foregrounds
  }
  }
  // Update is called once per frame
- void Update () {
+ void FixedUpdate () {
  // for each background
  for (int i = 0; i < backgrounds.Length; i++) {
  // the parallax is the opposite of the camera movement because the previous frame multiplied by the scale

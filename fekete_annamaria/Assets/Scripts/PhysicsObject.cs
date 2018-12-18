@@ -16,6 +16,8 @@ public class PhysicsObject : MonoBehaviour {
     protected RaycastHit2D[] hitBuffer = new RaycastHit2D[16];
     protected List<RaycastHit2D> hitBufferList = new List<RaycastHit2D> (16);
 
+    protected bool isMovableRock = false;
+
 
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
@@ -35,7 +37,7 @@ public class PhysicsObject : MonoBehaviour {
     void Update () 
     {
         targetVelocity = Vector2.zero;
-        ComputeVelocity (); 
+        ComputeVelocity(); 
     }
 
     protected virtual void ComputeVelocity()
@@ -73,10 +75,15 @@ public class PhysicsObject : MonoBehaviour {
 
         if (distance > minMoveDistance) 
         {
-            int count = rb2d.Cast (move, contactFilter, hitBuffer, distance + shellRadius);
+            int count = 0;
+            count = rb2d.Cast (move, contactFilter, hitBuffer, distance + shellRadius);
             hitBufferList.Clear ();
             for (int i = 0; i < count; i++) {
-                hitBufferList.Add (hitBuffer [i]);
+                Debug.Log(hitBuffer[i].collider.gameObject.tag);
+                if(hitBuffer[i].collider.gameObject.tag != "MovableRock")
+                {                  
+                    hitBufferList.Add (hitBuffer [i]);
+                }
             }
 
             for (int i = 0; i < hitBufferList.Count; i++) 
@@ -101,11 +108,8 @@ public class PhysicsObject : MonoBehaviour {
                 float modifiedDistance = hitBufferList [i].distance - shellRadius;
                 distance = modifiedDistance < distance ? modifiedDistance : distance;
             }
-
-
         }
-
+  
         rb2d.position = rb2d.position + move.normalized * distance;
     }
-
 }

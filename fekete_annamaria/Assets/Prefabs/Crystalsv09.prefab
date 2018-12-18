@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4981853204179252}
   - component: {fileID: 61740794944909986}
+  - component: {fileID: 114158333480994272}
   m_Layer: 8
   m_Name: Crystalsv09
   m_TagString: Crystal
@@ -621,7 +622,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.4897852, y: 1.5465529}
@@ -674,6 +675,18 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114158333480994272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305964118088936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20cf12e496cc024fa3f081dfe3fb86f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gm: {fileID: 0}
 --- !u!198 &198984247077395702
 ParticleSystem:
   m_ObjectHideFlags: 1

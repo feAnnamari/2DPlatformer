@@ -9,6 +9,11 @@ TagManager:
   - Crystal
   - HitChecker
   - chkpoint
+  - MovingTile
+  - MovableRock
+  - Button
+  - libikoka
+  - bouncer
   layers:
   - Default
   - TransparentFX
@@ -23,7 +28,7 @@ TagManager:
   - 
   - Midground
   - Path
-  - 
+  - MovableObject
   - 
   - 
   - 
