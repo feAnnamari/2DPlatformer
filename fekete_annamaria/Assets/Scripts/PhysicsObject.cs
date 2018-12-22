@@ -79,7 +79,7 @@ public class PhysicsObject : MonoBehaviour {
             count = rb2d.Cast (move, contactFilter, hitBuffer, distance + shellRadius);
             hitBufferList.Clear ();
             for (int i = 0; i < count; i++) {
-                Debug.Log(hitBuffer[i].collider.gameObject.tag);
+                //Debug.Log(hitBuffer[i].collider.gameObject.tag);
                 if(hitBuffer[i].collider.gameObject.tag != "MovableRock")
                 {                  
                     hitBufferList.Add (hitBuffer [i]);

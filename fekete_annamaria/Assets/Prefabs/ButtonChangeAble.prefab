@@ -171,9 +171,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4625823516381442}
-  - component: {fileID: 114492001960320174}
   - component: {fileID: 60687392997918188}
   - component: {fileID: 61123048447484826}
+  - component: {fileID: 114259668757075260}
   m_Layer: 8
   m_Name: ButtonChangeAble
   m_TagString: Button
@@ -227,7 +227,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1978836549821118}
   m_LocalRotation: {x: -0, y: -0, z: 0.39421755, w: 0.91901714}
-  m_LocalPosition: {x: -3.7081904, y: -1.0409327, z: 37.83}
+  m_LocalPosition: {x: 444.7258, y: 26.639736, z: 37.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4762812109334130}
@@ -707,7 +707,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114492001960320174
+--- !u!114 &114259668757075260
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -715,18 +715,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1978836549821118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba56b14a01b321e4792219ec7304dfb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e3bc5fffde9c874ea22756e74973f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerHere: 0
   animator: {fileID: 0}
   prefabToSpawn: {fileID: 1167311204846600, guid: d9de67639eb467d438dcad09c9a7760c,
     type: 2}
-  topGround: {fileID: 0}
-  botGround: {fileID: 0}
+  leftHideGround: []
+  rightHideGround: []
   changeable: 1
   death: 0
-  buttonIndex: 3
+  buttonIndex: 2
 --- !u!198 &198445607292936418
 ParticleSystem:
   m_ObjectHideFlags: 1

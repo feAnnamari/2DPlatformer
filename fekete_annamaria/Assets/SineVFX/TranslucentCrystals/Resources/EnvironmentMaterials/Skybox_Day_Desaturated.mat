@@ -4,11 +4,11 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Skybox_Day_Desaturated
   m_Shader: {fileID: 4800000, guid: f0e6432d0c161f0438eaa5961f74bd95, type: 3}
-  m_ShaderKeywords: _SUNDISK_HIGH_QUALITY
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

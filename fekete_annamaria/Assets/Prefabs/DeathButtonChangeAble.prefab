@@ -36,11 +36,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4055916442415530}
   - component: {fileID: 60092168940831892}
-  - component: {fileID: 114009813454716152}
   - component: {fileID: 61478871139325612}
+  - component: {fileID: 114239350686401236}
   m_Layer: 8
   m_Name: DeathButtonChangeAble
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -679,7 +679,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114009813454716152
+--- !u!114 &114239350686401236
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -687,15 +687,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1167311204846600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba56b14a01b321e4792219ec7304dfb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e3bc5fffde9c874ea22756e74973f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerHere: 1
   animator: {fileID: 0}
   prefabToSpawn: {fileID: 1978836549821118, guid: fab4c3dc6c25f754181a005b87a30bea,
     type: 2}
-  topGround: {fileID: 0}
-  botGround: {fileID: 0}
+  leftHideGround: []
+  rightHideGround: []
   changeable: 1
   death: 1
   buttonIndex: 0

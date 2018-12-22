@@ -7,6 +7,8 @@ public class MovableRock : MonoBehaviour {
 
 	[SerializeField] private Vector2 force = new Vector2(100,0);
 	private bool played;
+	private bool libikokan;
+	private bool collided;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,9 +21,12 @@ public class MovableRock : MonoBehaviour {
 
 	private void OnCollisionEnter2D(Collision2D other) {
 		
+		if(other.gameObject.tag!="Player"&&!libikokan)
+		gameObject.GetComponent<AudioSource>().Play();
+
 		if(other.gameObject.tag == "libikoka" && !played)
 		{
-			gameObject.GetComponent<AudioSource>().Play();
+			libikokan=true;
 			played = true;
 			gameObject.tag = "Untagged";
 		}

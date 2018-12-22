@@ -30,7 +30,7 @@ public class MovingTile : MonoBehaviour {
 	void Start () {
 		start = this.transform.position;
 		end= new Vector3(this.transform.position.x + distance,start.y, 0);
-		if(hidePosition == Positions.Right)
+		if(hidePosition == Positions.Right && !alwaysMoving)
 		{
 			end= new Vector3(this.transform.position.x - distance,start.y, 0);
 		}

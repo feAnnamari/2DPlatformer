@@ -112,7 +112,7 @@ public class PlayerPlatformerController : PhysicsObject {
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Vine")
         {   
-            Debug.Log("ENTERED");
+           // Debug.Log("ENTERED");
             //Physics2D.gravity = new Vector2(0,0);
            
             GetComponent<Rigidbody2D>().gravityScale = 0;
@@ -156,7 +156,7 @@ public class PlayerPlatformerController : PhysicsObject {
 
         if(other.gameObject.tag == "Button")
         {
-            other.gameObject.GetComponent<Button>().playerHere = true;
+            other.gameObject.GetComponent<ButtonScript>().playerHere = true;
         }
         
     }
@@ -164,7 +164,7 @@ public class PlayerPlatformerController : PhysicsObject {
     private void OnTriggerExit2D(Collider2D other) {
         if(other.gameObject.tag == "Button")
         {
-            other.gameObject.GetComponent<Button>().playerHere = false;
+            other.gameObject.GetComponent<ButtonScript>().playerHere = false;
         }
     }
 
@@ -176,7 +176,7 @@ public class PlayerPlatformerController : PhysicsObject {
         
         if(other.gameObject.tag == "MovableRock")
         {
-            Debug.Log("ROCK ENTERED");
+           // Debug.Log("ROCK ENTERED");
             isMovableRock = true;
         }
 
